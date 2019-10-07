@@ -1,6 +1,2 @@
-require "mtb_types/version"
-
-module MtbTypes
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "mtb_types/version"
+require_relative './mtb_types/cli'
