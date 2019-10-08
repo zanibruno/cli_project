@@ -14,7 +14,7 @@ def self.all
 
 
 type_1 = self.new
-type_1.name = doc.search(".content.container p strong")[0].text
+type_1.name = doc.search(".content.container p strong")[0].text.delete(":")
 type_1.description = doc.search(".content.container p")[2].text
 
 type_2 = self.new
@@ -46,7 +46,7 @@ type_8.name = doc.search(".content.container p strong")[6].text
 type_8.description = doc.search(".content.container p")[16].text
 
 [type_1, type_2, type_3, type_4, type_5, type_6, type_7, type_8]
-binding.pry
+# binding.pry
 
 
 end
